@@ -1,0 +1,267 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Verdana', sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.menu {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 99;
+	background-color: rgba(0,0,0,.5);
+	font-family: monospace;
+	font-size: 20px;
+	text-align: center; 
+} 
+
+.menu a {
+	line-height: 50px;
+	padding-right: 2%;
+	color: #fff;
+	transition: .2s color ease-in-out; 
+}
+
+nav a:hover{
+	color: #666 !important;
+}
+
+
+header {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header h3, header a {
+	z-index: 2;
+	background-color: #fff;
+	padding: 5px;
+	border: 2px solid #000;
+}
+
+
+header a {
+	background-color: #000;
+	color: #fff;
+	transition: .3s background-color, color ease-in-out;
+}
+
+header a:hover {
+	background-color: #fff;
+	color: #000;
+}
+.layer1, .layer2, .layer3, .layer4 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+}
+
+.layer1 {
+	background-image: url(../index1.jpg);
+}
+
+.layer2 {
+	background-image: url(../index2.jpg);
+	animation: layer2anim 10s infinite;
+}
+
+.layer3 {
+	background-image: url(../index3.jpg);
+	animation: layer3anim 10s infinite;
+}
+
+@keyframes layer2anim {
+	0% {
+		opacity: 0;
+	}
+
+	17% {
+		opacity: 0;
+	}
+
+	33% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	67% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes layer3anim {
+	0% {
+		opacity: 0;
+	}
+
+	33% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	67% {
+		opacity: 1;
+	}
+
+	83% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+#firstSub {
+	width: 100%;
+	background-color:#fff;
+	font-size: 4em;
+	text-align: center;
+	font-family: monospace;
+	font-weight: 400;
+	border-top: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+	height: auto;
+}
+
+.sect {
+	width: 100%;
+	height: 60vh;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.sect-one {
+	background-color: #F5F5F5;
+}
+
+.sect-two {
+	background-image: url(../index4.jpg);
+}
+
+.sect-three {
+	background-image: url(../index5.jpg);
+}
+
+.left {
+	width: 40%;
+	float: left;
+	display: inline-block;
+	margin-right: 5%;
+}
+
+.right {
+	width: 40%;
+	display: inline-block;
+}
+.left {
+	width: 40%;
+	float: center;
+	display: inline-block;
+	margin-right: 5%;
+}
+
+.sect img {
+	width: 450px;
+	height: 300px;
+	padding: 10px;
+	background-color: #fff;
+	border: 2px solid #000;
+	opacity: 1;
+	transition: .5s opacity ease-in-out;
+}
+
+
+.clearfix {
+	clear: both;
+}
+
+.sect-one .left{
+	padding: 10px;
+	text-align: justify;
+}
+
+.sect-two .right, .sect-three .right {
+	background-color: #fff;
+	padding: 10px;
+	border: 1px solid #000;
+	text-align: justify;
+}
+
+.subSection {
+	height: 30vh;
+}
+
+
+
+#btn {
+	padding: 2px 4px;
+	border: 2px solid #000;
+	background: #fff;
+	font-family: monospace;
+	position: relative;
+	left: -2px;
+	bottom: 3px;
+	transition: .3s background-color, color ease-in-out;
+}
+
+#btn:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+h3 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	word-spacing: 4px;
+	padding-bottom: 10px;
+}
+
+.foot {
+	width: 100%;
+	height: 30vh;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+.scale {
+	transition: 2s;	
+}
+.scale:hover {
+	transform: scale(1.3)	
+}
